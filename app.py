@@ -1,15 +1,11 @@
 from flask import Flask, request, jsonify, abort, render_template
 import requests
-from dotenv import load_dotenv
 import os
-
-#Load environment variable from .env file
-load_dotenv()
 
 app = Flask(__name__)
 
 #api key 
-API_KEY = os.getenv('98402e64a3c3d081d1bbf872f9ad4953')
+API_KEY = '98402e64a3c3d081d1bbf872f9ad4953'
 BASE_URL = 'https://api.openweathermap.org/data/2.5/weather'
 
 
